@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>IBI Client Interface</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+       
+            margin: 0;
+            padding-top: 80px; 
+        }
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 16px;
+            gap: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 100%;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 700px;
+            width: 90%;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 40px auto 0 auto; 
+            text-align: center;
+        }
+    .nav-button {
+            background-color: transparent;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            border-bottom: 3px solid transparent;
+            color: #007bff;
+            text-decoration: none;
+        }
+          
+        .nav-button:hover {
+            border-bottom: 3px solid #007bff;
+            background-color: #f4f4f4;
+        }
+    .top-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 20px;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
+     .site-footer {
+        text-align: center;
+        padding: 15px 0;
+        margin-top: auto;
+        font-size: 14px;
+        color: #555;
+        background-color: #f1f1f1;
+        width: 100%;
+        border-top: 1px solid #ddd;
+    }
+
+    </style>
+</head>
+
+
+
+<body>
+    <header class="top-banner">🔐 IBI Application</header>
+    <div class="navbar">
+        <a href="/register" class="nav-button"> Register</a>
+        <a href="/login" class="nav-button">Login</a>
+       
+    </div>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer class="site-footer">
+    <b>&copy; 2025 IBI FYP Project. This is for FYP 2 demo purpose only.</b>
+    </footer>
+
+</body>
+</html>

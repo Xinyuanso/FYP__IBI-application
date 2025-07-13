@@ -1,0 +1,32 @@
+<!-- register.html -->
+{% extends "layout.html" %}
+{% block content %}
+<h2>📥 Register</h2>
+<form method="post" action="/register">
+    <input type="text" name="identity" placeholder="Enter your identity (e.g. email)" required>
+    <button type="submit">Get Secret Key</button>
+</form>
+{% if message %}<p><strong>{{ message }}</strong></p>{% endif %}
+{% if s_val and r_val %}
+<h3>🔑 Your Secret Key</h3>
+
+
+<button onclick="downloadUSK()">Download usk.txt</button>
+
+<script>
+    function downloadUSK() {
+    
+    const content = `s: {{ s_val }}\nr: {{ r_val }}`;
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'usk.txt';
+    link.click();
+    URL.revokeObjectURL(url);
+
+    }
+</script>
+
+{% endif %}
+{% endblock %}

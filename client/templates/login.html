@@ -1,0 +1,82 @@
+<!-- login.html -->
+{% extends "layout.html" %}
+{% block content %}
+<h2>🔑 Login</h2>
+
+
+<label for="uskFile" class="custom-file-upload">
+    Upload usk
+</label>
+<input type="file" id="uskFile" name="uskFile" accept=".txt" onchange="loadUSKFile()" /><br><br>
+
+
+<p id="uploadStatus" style="display: none; color: green; font-weight: bold;"></p>
+
+
+<!-- Login Form -->
+<form method="post" action="/login" onsubmit="return checkUSK();">
+    <input type="text" name="identity" id="identity" placeholder="Enter identity" required><br><br>
+    <input type="hidden" name="s" id="s">
+    <input type="hidden" name="r" id="r">
+    <button type="submit">Login</button>
+</form>
+
+{% if message %}<p><strong>{{ message }}</strong></p>{% endif %}
+
+
+<style>
+    input[type="file"] {
+        display: none;
+    }
+
+    .custom-file-upload {
+        display: inline-block;
+        padding: 10px 10px;
+        background-color: #007bff;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+   
+    }
+
+    .custom-file-upload:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+
+<script>
+   function loadUSKFile() {
+    const file = document.getElementById('uskFile').files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        const lines = e.target.result.split('\n');
+        lines.forEach(line => {
+            const [key, value] = line.split(':').map(s => s.trim());
+            if (key === 's') document.getElementById('s').value = value;
+            if (key === 'r') document.getElementById('r').value = value;
+        });
+
+        const status = document.getElementById('uploadStatus');
+        status.style.display = 'block';
+        status.innerText = '✔️ USK file uploaded successfully!';
+    };
+    reader.readAsText(file);
+    }
+
+
+    function checkUSK() {
+        const sVal = document.getElementById('s').value;
+        const rVal = document.getElementById('r').value;
+        if (!sVal || !rVal) {
+            alert("⚠️ Please upload your usk.txt file before logging in.");
+            return false;
+        }
+        return true;
+    }
+</script>
+{% endblock %}
