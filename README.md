@@ -1,4 +1,4 @@
-===========================================
+
 Development of Identity-Based Identification (IBI) Library
 Final Year Project - SO XIN YUAN 1211100165
 ===========================================
