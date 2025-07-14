@@ -4,7 +4,7 @@ Development of Identity-Based Identification (IBI) Library
 
 Project Description:
 ---------------------
-This project implements an Identity-Based Identification (IBI) scheme into cryptographic library using MIRACL Core.
+This project implements an Identity-Based Identification (IBI) scheme into cryptographic library using MIRACL Core. An application of client-server structure demonstrates the library's usage
 
 Directory Structure:
 ---------------------
