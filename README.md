@@ -4,13 +4,14 @@ Development of Identity-Based Identification (IBI) Library
 
 Project Description:
 ---------------------
-This project implements an Identity-Based Identification (IBI) scheme into cryptographic library using MIRACL Core. An application of client-server structure demonstrates the library's usage
+This project implements an Identity-Based Identification (IBI) scheme into cryptographic library using MIRACL Core. An application of client-server structure demonstrates the library's usage. 
 
 Directory Structure:
 ---------------------
 - /IBI_Scheme.py
 - /client
-- /server       
+- /server
+- /requirement.txt     
 - This file
 
 Requirements:
@@ -18,10 +19,8 @@ Requirements:
 Python version: 3.10
 Recommended environment: anaconda or virtualenv
 
-Required libraries:
-- numpy
-- hashlib
 
 
-Install dependencies using:
+
+
 
