@@ -16,8 +16,14 @@ Directory Structure:
 
 Requirements:
 --------------
-Python version: 3.10
-Recommended environment: anaconda or virtualenv
+- Python version: 3.10
+- Recommended environment: anaconda or virtualenv
+- System : Tested on Linux & MacOS
+
+Install dependancies : 
+--------------
+```bash
+pip install -r requirements.txt
 
 
 
