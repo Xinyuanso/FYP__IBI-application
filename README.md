@@ -12,7 +12,7 @@ Directory Structure:
 - /client
 - /server
 - /requirement.txt     
-- This file
+- /README.md
 
 Requirements:
 --------------
