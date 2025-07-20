@@ -43,14 +43,14 @@ Preparation : Download the client and server folder and place it in desire devic
 ### 1. Run the server at Linux 
 Use server.py file in server. Modify two things : 
 
-#### I. The system apth for MIRACL Core
+#### - The system apth for MIRACL Core
    ```bash
    #The path should be the path for the MIRACL Core installed on server device
    #Example: 
    sys.path.append('/home/kali/Desktop/core/python')
    sys.path.append('/home/kali/Desktop/core/python/bls12381')
    ```
-#### II. The server's IP address on line 116
+#### - The server's IP address on line 116
    ```bash
    #change the address to server's IP address
    #Example: 
@@ -60,7 +60,7 @@ Use server.py file in server. Modify two things :
 ### 2. Run the client on MacOS 
 Use client.py file in client. Modify two things : 
 
-#### I. The system apth for MIRACL Core
+#### - The system apth for MIRACL Core
    ```bash
    #The path should be the path for the MIRACL Core installed on client device
    #Example: 
@@ -68,7 +68,7 @@ Use client.py file in client. Modify two things :
    sys.path.append('/Users/soxinyuan/core/python/bls12381')
    ```
 
-#### II. The server's URL on line 14
+#### - The server's URL on line 14
    ```bash
    #change the address to server's IP address
    #Example: 
@@ -87,6 +87,7 @@ Use client.py file in client. Modify two things :
 ### License
 
 This project is for academic use only.
+
 © 2025 Xinyuan So — Final Year Project (FYP 2).
 
 
