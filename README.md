@@ -1,12 +1,14 @@
 # Development of Identity-Based Identification (IBI) Library
 This project implements an Identity-Based Identification (IBI) scheme into cryptographic library using MIRACL Core. An application of client-server structure demonstrates the library's usage. 
 
+
 ## Directory Structure
 - /IBI_Scheme.py
 - /client
 - /server
 - /requirement.txt     
 - /README.md
+
 
 ## Requirements
 - Python version: 3.10
@@ -17,6 +19,7 @@ This project implements an Identity-Based Identification (IBI) scheme into crypt
 ```bash
 pip install -r requirements.txt
 ```
+
 ## MIRACL Core Setup 
 This project uses MIRACL Core library for crptographic operations. Setup of the library is needed for the environment. Link : https://github.com/miracl/core
 
@@ -35,6 +38,7 @@ python config.py
 #After done the configuration, test if the curves works 
 python test.py
 ```
+
 
 ## How to run 
 
@@ -78,6 +82,7 @@ Use client.py file in client. Modify two things :
 ### 3. Running code 
 Run the server code first then run the client and click the link provided in client to access the webpage. 
 
+
 ## Overall Flow 
 
 1. Visit the /register page and enter an identity (e.g.: email) and press 'Get secret key' button.
@@ -85,7 +90,8 @@ Run the server code first then run the client and click the link provided in cli
 3. On the /login page, upload the usk.txt file and enter your identity to authenticate.
 4. The server verifies and come back with verification status (successful and redirect to dashboard or unsuccessful).
 
-### License
+
+## License
 
 This project is for academic use only.
 
