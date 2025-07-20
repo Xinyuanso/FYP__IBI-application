@@ -38,19 +38,19 @@ python test.py
 
 ## How to run 
 
-### Preparation : Download the client and server folder and place it in desire device or location. Make sure there are two IP addresses for the client and server in the same network (LAN). 
+Preparation : Download the client and server folder and place it in desire device or location. Make sure there are two IP addresses for the client and server in the same network (LAN). 
 
 ### 1. Run the server at Linux 
 Use server.py file in server. Modify two things : 
 
-#### 1. The system apth for MIRACL Core
+#### I. The system apth for MIRACL Core
    ```bash
    #The path should be the path for the MIRACL Core installed on server device
    #Example: 
    sys.path.append('/home/kali/Desktop/core/python')
    sys.path.append('/home/kali/Desktop/core/python/bls12381')
    ```
-#### 2. The server's IP address on line 116
+#### II. The server's IP address on line 116
    ```bash
    #change the address to server's IP address
    #Example: 
@@ -60,7 +60,7 @@ Use server.py file in server. Modify two things :
 ### 2. Run the client on MacOS 
 Use client.py file in client. Modify two things : 
 
-#### 1. The system apth for MIRACL Core
+#### I. The system apth for MIRACL Core
    ```bash
    #The path should be the path for the MIRACL Core installed on client device
    #Example: 
@@ -68,7 +68,7 @@ Use client.py file in client. Modify two things :
    sys.path.append('/Users/soxinyuan/core/python/bls12381')
    ```
 
-#### 2. The server's URL on line 14
+#### II. The server's URL on line 14
    ```bash
    #change the address to server's IP address
    #Example: 
