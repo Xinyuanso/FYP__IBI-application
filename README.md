@@ -20,10 +20,12 @@ Requirements:
 - Recommended environment: anaconda or virtualenv
 - System : Tested on Linux & MacOS
 
-Install dependancies : 
+Install dependencies : 
 --------------
 ```bash
 pip install -r requirements.txt
+
+
 
 
 
