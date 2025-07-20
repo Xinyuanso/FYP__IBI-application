@@ -75,7 +75,8 @@ Use client.py file in client. Modify two things :
    SERVER_URL = "http://172.20.10.3:5000"
    ```
 
-### 3. Run the server code first then run the client and click the link provided in client to access the webpage. 
+### 3. Running code 
+Run the server code first then run the client and click the link provided in client to access the webpage. 
 
 ## Overall Flow 
 
