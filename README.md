@@ -1,6 +1,7 @@
 # Development of Identity-Based Identification (IBI) Library
-This project implements an Identity-Based Identification (IBI) scheme into cryptographic library using MIRACL Core. An application of client-server structure demonstrates the library's usage. 
+This project implements an Identity-Based Identification (IBI) scheme by Tan and Heng (2023) into cryptographic library using MIRACL Core. An application of client-server structure demonstrates the library's usage. 
 
+Journal : https://dl.acm.org/doi/10.1145/3600160.3604999 
 
 ## Directory Structure
 - /IBI_Scheme.py
